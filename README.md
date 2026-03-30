@@ -1,4 +1,4 @@
-# Interpretable Variant Pathogenicity Prediction using ClinVar
+# Interpretable Multi-Gene Variant Pathogenicity Prediction using ClinVar and XGBoost
 
 This project builds an interpretable machine learning model to predict the pathogenicity of genetic variants using ClinVar data.
 
@@ -18,6 +18,13 @@ This project builds an interpretable machine learning model to predict the patho
 ## SHAP Explainability
 
 ![SHAP Plot](results/shap_plot.png)
+
+Key insight: Gene-level pathogenicity signals dominate predictions, followed by mutation type effects.
+
+## How to Run
+
+pip install -r requirements.txt  
+python src/model.py
 
 ## Tech Stack
 
